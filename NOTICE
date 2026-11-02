@@ -1,0 +1,27 @@
+AE3-TL — Open-Source Table Extraction
+Copyright 2026 Team APEX:E3
+
+This product includes software developed by Team APEX:E3
+(https://github.com/APEXE3HQ).
+
+Licensed under the Apache License, Version 2.0 (the "License"). You may use
+this software, including in commercial products, under the terms of the
+License. A copy of the License is distributed with this software in LICENSE.
+
+The AE3-TL model weights are downloaded from the public Hugging Face
+repository APEXE3HQ/ae3-tl at runtime and remain subject to the license of
+that repository.
+
+This software depends on the following open-source packages, each under its
+own license:
+
+  numpy          https://numpy.org
+  onnxruntime    https://onnxruntime.ai
+  Pillow         https://python-pillow.org
+  httpx          https://www.python-httpx.org
+  tabulate       https://github.com/astanin/python-tabulate
+  defusedxml     https://github.com/tiran/defusedxml
+
+and calls the Tesseract OCR program (Apache License 2.0,
+https://github.com/tesseract-ocr/tesseract), which must be installed
+separately by the user.

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv-test/
+venv/
+
+# Model weights (downloaded at first run, ~126 MB)
+weights/
+
+# Outputs
+tables.json
+tables.md
+*.part
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
