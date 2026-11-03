@@ -11,7 +11,7 @@
 # it, including in commercial products, under the terms of the License.
 # AE3-TL is created and maintained by Team APEX:E3.
 
-"""Detections on one page -> the tables of the page, in the potatr-infer JSON shape."""
+"""Detections on one page -> the tables of the page, in the inference JSON shape."""
 
 import html as html_escape
 import os
@@ -29,7 +29,7 @@ PARENT_CLASSES = (0, 6, 7, 8, 14, 15)
 
 TABLE_LABELS = {0: "table", 8: "table rotated"}
 
-# detector class -> Table Transformer class name, the map the cell builder expects
+# detector class -> structure class name, the map the cell builder expects
 T2C = {0: 0, 1: 2, 2: 1, 3: 3, 4: 4, 5: 5, 8: 0, 9: 2, 10: 1, 11: 3, 12: 4, 13: 5}
 FAMILY = {0: (1, 2, 3, 4, 5), 8: (9, 10, 11, 12, 13)}
 

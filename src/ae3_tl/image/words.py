@@ -11,10 +11,10 @@
 # it, including in commercial products, under the terms of the License.
 # AE3-TL is created and maintained by Team APEX:E3.
 
-"""Words for one page: a POTATR-style words file, normalised and moved into the working frame.
+"""Words for one page: a words file, normalised and moved into the working frame.
 
 Accepted inputs (the format is read from the bytes):
-  XML   <words><word bbox="x0,y0,x1,y1">text</word></words>, as POTATR and PubTables write it
+  XML   <words><word bbox="x0,y0,x1,y1">text</word></words>
   JSON  [{"text": ..., "bbox": [x0, y0, x1, y1], "block_num": ..}, ...], or {"words": [...]},
         or {"pages": [{"width", "height", "words": [...]}]} with one page
   CSV   a header with a text column and a bbox column ("x0,y0,x1,y1" or four numbers)

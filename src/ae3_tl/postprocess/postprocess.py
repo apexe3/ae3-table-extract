@@ -14,12 +14,6 @@
 """
 Table-structure post-processing: predicted rows, columns, headers, spanning cells and words ->
 table cells with their text.
-
-Vendored from Kensho's POTATR release, which derives it from Microsoft's Table Transformer
-(https://github.com/microsoft/table-transformer, MIT, Copyright (C) 2021 Microsoft Corporation).
-See THIRD_PARTY_NOTICES.md. The only change here is that the small `Rect` class below stands in
-for the rectangle type the original file imported, which is the only thing this module used from
-that library.
 """
 from collections import defaultdict
 
