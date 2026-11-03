@@ -9,6 +9,16 @@ captions and footers of every table on a page.
 commercial products, modify it and redistribute it.**
 Created and maintained by **Team APEX:E3**.
 
+## Research paper
+
+The method behind AE3-TL — a table-structure network that predicts
+row/column boxes, headers, spans, captions and footers, joined with
+relation links and merged with OCR word boxes — is described in the
+bundled research paper [`AE3-TL_2026.pdf`](AE3-TL_2026.pdf). Reading it
+first explains *why* the pipeline looks the way it does: what the model
+predicts, how the relation head links rows to captions and footers, and
+how cells are assembled from model geometry plus OCR text.
+
 ---
 
 ## What's in this folder
