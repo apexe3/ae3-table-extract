@@ -27,9 +27,23 @@ WORKDIR /app
 COPY pyproject.toml README.md LICENSE NOTICE ./
 COPY src ./src
 
-# onnxruntime-gpu 1.21-1.26 ships CUDA 12.8 + cuDNN 9 binaries, matching this base image
-RUN pip3 install --no-cache-dir --break-system-packages "onnxruntime-gpu>=1.21,<1.27" && \
-    pip3 install --no-cache-dir --break-system-packages .
+# onnxruntime-gpu 1.21-1.26 ships CUDA 12.8 + cuDNN 9 binaries, matching this base image;
+# pip is upgraded first because Ubuntu 22.04 ships pip 22, which builds an UNKNOWN-0.0.0
+# wheel from this pyproject and never creates the ae3-tl entry point. The package is
+# installed with --no-deps so pip does not pull plain onnxruntime over the GPU build;
+# the remaining runtime dependencies are installed explicitly instead.
+RUN pip3 install --no-cache-dir --upgrade "pip>=24" && \
+    pip3 install --no-cache-dir "onnxruntime-gpu>=1.21,<1.27" && \
+    pip3 install --no-cache-dir --no-deps . && \
+    pip3 install --no-cache-dir \
+        "numpy>=1.26" \
+        "pillow>=10.0" \
+        "httpx>=0.27" \
+        "tabulate>=0.9" \
+        "defusedxml>=0.7" \
+        "fastapi>=0.115" \
+        "uvicorn>=0.30" \
+        "python-multipart>=0.0.9"
 
 # weights live on a volume so they are downloaded once and reused
 RUN mkdir -p /data/weights
