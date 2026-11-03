@@ -193,6 +193,47 @@ with open("tables.json", "w") as fh:
 
 `service.extract` accepts `fmt="json"`, `"markdown"`, `"html"` or `"csv"`.
 
+## Docker
+
+Ready-made images are published on Docker Hub — weights (~126 MB) are
+downloaded into the mounted volume on first start and reused afterwards.
+
+```bash
+# CPU
+docker run -d --name ae3-tl -p 8000:8000 \
+  -e AE3_API_KEY=change-me \
+  -v ae3-weights:/data/weights \
+  usmanapexe3/ae3-table-extract:latest
+
+# GPU (NVIDIA, CUDA 12.8 + cuDNN 9 — needs the NVIDIA Container Toolkit
+# on the host and a driver of 570.x or newer)
+docker run -d --name ae3-tl-gpu --gpus all -p 8000:8000 \
+  -e AE3_API_KEY=change-me \
+  -v ae3-weights:/data/weights \
+  usmanapexe3/ae3-table-extract:gpu
+```
+
+Then:
+
+```bash
+curl http://localhost:8000/health
+curl http://localhost:8000/v1/extract -H "X-API-Key: change-me" \
+  -F "file=@page.png" -F "fmt=json"
+```
+
+Notes:
+
+- The HTTP API (endpoints, auth, `AE3_API_KEY`) is served by `ae3-tl serve`
+  inside the container; the API key is required on every route except
+  `/health`.
+- Pick the GPU or CPU image with the tag: `:latest` / `:0.2.0` for CPU,
+  `:gpu` / `:0.2.0-gpu` for CUDA. Build them yourself with
+  `docker build -t ae3-tl .` (CPU) or `docker build -f Dockerfile.gpu -t ae3-tl-gpu .`.
+- Override the provider with `-e AE3_PROVIDER=cpu|cuda` if you want a GPU
+  container to fall back to CPU (or vice versa).
+- The images are built for `linux/amd64`; on an Apple-silicon Mac pass
+  `--platform linux/amd64` (emulated, fine for a smoke test, too slow for real use).
+
 ## Output shape
 
 `tables.json` looks like this (trimmed):

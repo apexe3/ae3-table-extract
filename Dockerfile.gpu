@@ -1,0 +1,43 @@
+# AE3-TL — HTTP API for table extraction from images
+# gpu image: onnxruntime-gpu (CUDA 12.8 + cuDNN 9) + tesseract, weights fetched at first start
+# requires NVIDIA Container Toolkit on the host and a driver of 570.x or newer
+FROM nvidia/cuda:12.8.1-cudnn-runtime-ubuntu22.04
+
+LABEL org.opencontainers.image.title="AE3-TL (GPU)" \
+      org.opencontainers.image.description="Table extraction from images: ONNX table-structure model on CUDA + Tesseract OCR" \
+      org.opencontainers.image.licenses="Apache-2.0" \
+      org.opencontainers.image.source="https://github.com/apexe3/ae3-table-extract" \
+      org.opencontainers.image.vendor="Team APEX:E3" \
+      org.opencontainers.image.variant="gpu"
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    AE3_WEIGHTS_DIR=/data/weights \
+    AE3_PROVIDER=cuda
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        python3-minimal \
+        python3-pip \
+        tesseract-ocr \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY pyproject.toml README.md LICENSE NOTICE ./
+COPY src ./src
+
+# onnxruntime-gpu 1.21-1.26 ships CUDA 12.8 + cuDNN 9 binaries, matching this base image
+RUN pip3 install --no-cache-dir --break-system-packages "onnxruntime-gpu>=1.21,<1.27" && \
+    pip3 install --no-cache-dir --break-system-packages .
+
+# weights live on a volume so they are downloaded once and reused
+RUN mkdir -p /data/weights
+VOLUME /data/weights
+
+EXPOSE 8000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=120s --retries=5 \
+    CMD python3 -c "import httpx; httpx.get('http://127.0.0.1:8000/health', timeout=4).raise_for_status()"
+
+CMD ["ae3-tl", "serve", "--host", "0.0.0.0", "--port", "8000"]
