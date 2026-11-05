@@ -29,8 +29,8 @@ from ae3_tl.serve import render
 from ae3_tl.serve.errors import ApiError
 
 SOURCE_NAMES = {"text_layer": "pdf_text", "ocr": "ocr", "none": "none"}
-SUMMARY_FIELDS = ("id", "index", "page", "box", "label", "score", "rows", "columns", "caption",
-                  "footer", "source")
+SUMMARY_FIELDS = ("id", "index", "page", "box", "label", "score", "fit_confidence", "rows", "columns",
+                  "caption", "footer", "source")
 
 
 def kind_of(data: bytes) -> str:

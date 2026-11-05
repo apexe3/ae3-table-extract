@@ -35,12 +35,16 @@ Multipart form. Send exactly one of `file`, `file_id`, `file_url`.
      "box": [325.4, 1075.7, 1137.2, 1557.0],
      "model_box": [325.4, 1075.7, 1137.2, 1557.0],
      "content_box": [325.0, 1084.0, 1136.0, 1549.0],
-     "score": 0.9881, "rows": 14, "columns": 2,
+     "score": 0.9881, "fit_confidence": 0.8712, "rows": 14, "columns": 2,
      "caption": "Table 1. ...", "footer": "", "source": "ocr",
      "cells": [{"row": 0, "column": 0, "row_span": 1, "col_span": 1,
                 "box": [325.0, 1084.0, 1136.0, 1104.0], "text": "Characteristic", "header": true,
                 "ocr_confidence": 0.93}]}]}]}
 ```
+
+`score` is how sure the model is that a table is there. `fit_confidence` (0 to 1) is how well the
+page's words fit the cells built from the detected rows and columns: it drops when words fall
+outside every cell, typically because a column or row was missed. Use it to pick tables to check.
 
 `source` is `ocr`, `provided_words` or `none`. `ocr_confidence` appears on cells when the page was
 read with Tesseract.

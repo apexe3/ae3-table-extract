@@ -4,16 +4,16 @@
 # Licensed under the Apache License, Version 2.0; see LICENSE in the repository root.
 #
 # Builds the AE3-TL images and pushes them to Docker Hub.
-#   apexe3/ae3-table-extract:gpu  and :0.23-gpu   (x86_64, NVIDIA CUDA)
-#   apexe3/ae3-table-extract:cpu  and :0.23-cpu   (x86_64 and ARM, e.g. Apple silicon)
+#   apexe3/ae3-table-extract:gpu  and :0.24-gpu   (x86_64, NVIDIA CUDA)
+#   apexe3/ae3-table-extract:cpu  and :0.24-cpu   (x86_64 and ARM, e.g. Apple silicon)
 #
 # Run `docker login` first, then:   ./build_and_push.sh
 # Run it on an x86_64 Linux server: on an Apple-silicon Mac the GPU image builds under emulation,
 # which downloads and unpacks about 2 GB of NVIDIA libraries very slowly.
-# Override with:  VERSION=0.24 REPO=apexe3/ae3-table-extract CPU_PLATFORMS=linux/amd64 ./build_and_push.sh
+# Override with:  VERSION=0.25 REPO=apexe3/ae3-table-extract CPU_PLATFORMS=linux/amd64 ./build_and_push.sh
 set -euo pipefail
 
-VERSION="${VERSION:-0.23}"
+VERSION="${VERSION:-0.24}"
 REPO="${REPO:-apexe3/ae3-table-extract}"
 CPU_PLATFORMS="${CPU_PLATFORMS:-linux/amd64,linux/arm64}"
 

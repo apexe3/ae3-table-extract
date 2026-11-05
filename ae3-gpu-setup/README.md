@@ -12,7 +12,7 @@ exactly and serves tables over HTTP on port 8000.
 
 Images on Docker Hub: **`apexe3/ae3-table-extract:gpu`** (NVIDIA CUDA, x86_64) and
 **`apexe3/ae3-table-extract:cpu`** (x86_64 and ARM, includes Tesseract for scanned pages).
-Versioned tags: `:0.23-gpu`, `:0.23-cpu`.
+Versioned tags: `:0.24-gpu`, `:0.24-cpu`.
 
 ---
 
@@ -264,7 +264,7 @@ cd ~
 tar -xzf ae3-gpu-setup.tgz && rm ae3-gpu-setup.tgz
 cd ~/ae3-gpu-setup
 docker login -u <your Docker ID>     # a personal access token, not your password
-./build_and_push.sh                  # :gpu, :0.23-gpu, :cpu, :0.23-cpu
+./build_and_push.sh                  # :gpu, :0.24-gpu, :cpu, :0.24-cpu
 docker logout
 ```
 
@@ -274,16 +274,16 @@ To move a running service to the new image (the weights stay in the volume):
 docker rm -f ae3-tl
 docker run -d --name ae3-tl --restart unless-stopped --gpus '"device=1"' -p 8000:8000 --shm-size 1g \
   -e AE3_API_KEY=$(cat ~/ae3-tl.key) -e AE3_COPIES=3 \
-  -v ae3tl-weights:/data/weights apexe3/ae3-table-extract:0.23-gpu
+  -v ae3tl-weights:/data/weights apexe3/ae3-table-extract:0.24-gpu
 ```
 
 - Log in as **your own Docker ID**. An organisation such as `apexe3` cannot log in; your account
   pushes to the organisation's repository when it is a member of a team with Read & Write access.
   Create the token under Account settings → Personal access tokens (Read & Write).
 - `build_and_push.sh` builds the CPU image for x86_64 and ARM. On an x86 server it installs QEMU
-  first; `CPU_PLATFORMS=linux/amd64 ./build_and_push.sh` skips ARM. `VERSION=0.24` changes the tag.
+  first; `CPU_PLATFORMS=linux/amd64 ./build_and_push.sh` skips ARM. `VERSION=0.25` changes the tag.
 - To build only the GPU image:
-  `docker build -t apexe3/ae3-table-extract:gpu -t apexe3/ae3-table-extract:0.23-gpu .`
+  `docker build -t apexe3/ae3-table-extract:gpu -t apexe3/ae3-table-extract:0.24-gpu .`
   then `docker push` both tags.
 
 ## 8. Run without Docker

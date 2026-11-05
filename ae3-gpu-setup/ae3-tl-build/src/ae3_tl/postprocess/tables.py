@@ -328,7 +328,7 @@ def page_tables(objects: Sequence[dict], words: Sequence[dict],
 
     out = []
     for i, table in enumerate(tables):
-        cells, content_box, _confidence = table_cells(table, per_table[i], words, pad)
+        cells, content_box, fit_confidence = table_cells(table, per_table[i], words, pad)
         if by_best:
             caption_parts = best_parts(captions, caption_links, words, i)
             footer_parts = best_parts(footers, footer_links, words, i)
@@ -342,6 +342,9 @@ def page_tables(objects: Sequence[dict], words: Sequence[dict],
             "model_bbox": [round(float(v), 2) for v in table["bbox"]],
             "content_bbox": content_box,
             "score": round(float(table["score"]), 4),
+            # How well the page's words fit the detected cells (0 to 1): low when words fall
+            # outside every cell, e.g. a missed column. "score" only says a table is there.
+            "fit_confidence": round(float(fit_confidence), 4),
             "html": cells_to_html(cells),
             "cells": cell_records(cells),
             "caption": " ".join(part["text"] for part in caption_parts),

@@ -220,8 +220,8 @@ The production service is published on Docker Hub as **`apexe3/ae3-table-extract
 
 | tag | for |
 |---|---|
-| `:gpu`, `:0.23-gpu` | NVIDIA GPUs (x86_64, CUDA 12, driver 550+). ~190 ms a page, 37.7 pages/s on half an A100 |
-| `:cpu`, `:0.23-cpu` | any machine (x86_64 and ARM). Includes Tesseract, so it also reads scanned pages |
+| `:gpu`, `:0.24-gpu` | NVIDIA GPUs (x86_64, CUDA 12, driver 550+). ~190 ms a page, 37.7 pages/s on half an A100 |
+| `:cpu`, `:0.24-cpu` | any machine (x86_64 and ARM). Includes Tesseract, so it also reads scanned pages |
 
 Full instructions (sizing, sharing a GPU with vLLM, security, building, troubleshooting) are in
 the **[GPU deployment guide](ae3-gpu-setup/README.md)**. The short version, on a GPU server with
