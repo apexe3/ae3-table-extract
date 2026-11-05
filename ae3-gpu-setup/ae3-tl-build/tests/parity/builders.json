@@ -1,0 +1,310 @@
+{
+ "pages": 50,
+ "tables": 64,
+ "cells": 2951,
+ "tables_with_differences": 0,
+ "note": "expected.json confidence is from an earlier build and is not compared",
+ "pages_with_differences": [],
+ "per_page": [
+  {
+   "page": 1,
+   "tables": 2,
+   "cells": 47,
+   "differences": 0
+  },
+  {
+   "page": 2,
+   "tables": 2,
+   "cells": 100,
+   "differences": 0
+  },
+  {
+   "page": 3,
+   "tables": 1,
+   "cells": 8,
+   "differences": 0
+  },
+  {
+   "page": 4,
+   "tables": 1,
+   "cells": 28,
+   "differences": 0
+  },
+  {
+   "page": 5,
+   "tables": 2,
+   "cells": 98,
+   "differences": 0
+  },
+  {
+   "page": 6,
+   "tables": 1,
+   "cells": 26,
+   "differences": 0
+  },
+  {
+   "page": 7,
+   "tables": 1,
+   "cells": 80,
+   "differences": 0
+  },
+  {
+   "page": 8,
+   "tables": 2,
+   "cells": 141,
+   "differences": 0
+  },
+  {
+   "page": 9,
+   "tables": 1,
+   "cells": 64,
+   "differences": 0
+  },
+  {
+   "page": 10,
+   "tables": 2,
+   "cells": 148,
+   "differences": 0
+  },
+  {
+   "page": 11,
+   "tables": 2,
+   "cells": 166,
+   "differences": 0
+  },
+  {
+   "page": 12,
+   "tables": 1,
+   "cells": 106,
+   "differences": 0
+  },
+  {
+   "page": 13,
+   "tables": 2,
+   "cells": 69,
+   "differences": 0
+  },
+  {
+   "page": 14,
+   "tables": 1,
+   "cells": 30,
+   "differences": 0
+  },
+  {
+   "page": 15,
+   "tables": 1,
+   "cells": 9,
+   "differences": 0
+  },
+  {
+   "page": 16,
+   "tables": 1,
+   "cells": 36,
+   "differences": 0
+  },
+  {
+   "page": 17,
+   "tables": 1,
+   "cells": 46,
+   "differences": 0
+  },
+  {
+   "page": 18,
+   "tables": 1,
+   "cells": 30,
+   "differences": 0
+  },
+  {
+   "page": 19,
+   "tables": 1,
+   "cells": 35,
+   "differences": 0
+  },
+  {
+   "page": 20,
+   "tables": 1,
+   "cells": 30,
+   "differences": 0
+  },
+  {
+   "page": 21,
+   "tables": 1,
+   "cells": 25,
+   "differences": 0
+  },
+  {
+   "page": 22,
+   "tables": 1,
+   "cells": 4,
+   "differences": 0
+  },
+  {
+   "page": 23,
+   "tables": 2,
+   "cells": 0,
+   "differences": 0
+  },
+  {
+   "page": 24,
+   "tables": 2,
+   "cells": 46,
+   "differences": 0
+  },
+  {
+   "page": 25,
+   "tables": 1,
+   "cells": 28,
+   "differences": 0
+  },
+  {
+   "page": 26,
+   "tables": 1,
+   "cells": 21,
+   "differences": 0
+  },
+  {
+   "page": 27,
+   "tables": 1,
+   "cells": 27,
+   "differences": 0
+  },
+  {
+   "page": 28,
+   "tables": 1,
+   "cells": 91,
+   "differences": 0
+  },
+  {
+   "page": 29,
+   "tables": 2,
+   "cells": 139,
+   "differences": 0
+  },
+  {
+   "page": 30,
+   "tables": 2,
+   "cells": 201,
+   "differences": 0
+  },
+  {
+   "page": 31,
+   "tables": 1,
+   "cells": 188,
+   "differences": 0
+  },
+  {
+   "page": 32,
+   "tables": 1,
+   "cells": 46,
+   "differences": 0
+  },
+  {
+   "page": 33,
+   "tables": 1,
+   "cells": 166,
+   "differences": 0
+  },
+  {
+   "page": 34,
+   "tables": 1,
+   "cells": 24,
+   "differences": 0
+  },
+  {
+   "page": 35,
+   "tables": 1,
+   "cells": 88,
+   "differences": 0
+  },
+  {
+   "page": 36,
+   "tables": 1,
+   "cells": 32,
+   "differences": 0
+  },
+  {
+   "page": 37,
+   "tables": 1,
+   "cells": 0,
+   "differences": 0
+  },
+  {
+   "page": 38,
+   "tables": 1,
+   "cells": 33,
+   "differences": 0
+  },
+  {
+   "page": 39,
+   "tables": 1,
+   "cells": 40,
+   "differences": 0
+  },
+  {
+   "page": 40,
+   "tables": 1,
+   "cells": 64,
+   "differences": 0
+  },
+  {
+   "page": 41,
+   "tables": 3,
+   "cells": 90,
+   "differences": 0
+  },
+  {
+   "page": 42,
+   "tables": 1,
+   "cells": 36,
+   "differences": 0
+  },
+  {
+   "page": 43,
+   "tables": 1,
+   "cells": 40,
+   "differences": 0
+  },
+  {
+   "page": 44,
+   "tables": 1,
+   "cells": 28,
+   "differences": 0
+  },
+  {
+   "page": 45,
+   "tables": 2,
+   "cells": 121,
+   "differences": 0
+  },
+  {
+   "page": 46,
+   "tables": 1,
+   "cells": 64,
+   "differences": 0
+  },
+  {
+   "page": 47,
+   "tables": 1,
+   "cells": 12,
+   "differences": 0
+  },
+  {
+   "page": 48,
+   "tables": 1,
+   "cells": 0,
+   "differences": 0
+  },
+  {
+   "page": 49,
+   "tables": 1,
+   "cells": 0,
+   "differences": 0
+  },
+  {
+   "page": 50,
+   "tables": 1,
+   "cells": 0,
+   "differences": 0
+  }
+ ]
+}

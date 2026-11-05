@@ -1,0 +1,14 @@
+{
+ "date": "2026-10-26",
+ "image": "ae3-image:0.2.0",
+ "pages": 50,
+ "exact": 50,
+ "mismatched": 0,
+ "arrays": [
+  "logits",
+  "boxes",
+  "embeddings",
+  "indices"
+ ],
+ "max_abs": 0.0
+}

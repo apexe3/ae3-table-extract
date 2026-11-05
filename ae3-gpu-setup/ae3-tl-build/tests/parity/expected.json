@@ -1,0 +1,1056 @@
+{
+ "fixture": "pages.pdf",
+ "fixture_sha256": "974072ce511c45d4cd82e7ad53cd2878155e6d39e7f65bda3c16181b17de6c29",
+ "model": "ae3-tl",
+ "model_version": "v3-ep1",
+ "pages": 50,
+ "tables": 64,
+ "picks": [
+  [
+   "PMC10156028",
+   3
+  ],
+  [
+   "PMC10156028",
+   4
+  ],
+  [
+   "PMC10156028",
+   7
+  ],
+  [
+   "PMC10164476",
+   2
+  ],
+  [
+   "PMC10164476",
+   3
+  ],
+  [
+   "PMC10164476",
+   5
+  ],
+  [
+   "PMC10194073",
+   3
+  ],
+  [
+   "PMC10194073",
+   4
+  ],
+  [
+   "PMC10194073",
+   5
+  ],
+  [
+   "PMC11685680",
+   3
+  ],
+  [
+   "PMC11685680",
+   4
+  ],
+  [
+   "PMC11685680",
+   5
+  ],
+  [
+   "PMC10828044",
+   3
+  ],
+  [
+   "PMC10828044",
+   4
+  ],
+  [
+   "PMC11563044",
+   2
+  ],
+  [
+   "PMC11563044",
+   3
+  ],
+  [
+   "PMC11563044",
+   4
+  ],
+  [
+   "PMC10634086",
+   5
+  ],
+  [
+   "PMC10634086",
+   6
+  ],
+  [
+   "PMC10634086",
+   7
+  ],
+  [
+   "PMC10634086",
+   8
+  ],
+  [
+   "PMC10634086",
+   10
+  ],
+  [
+   "PMC10634086",
+   11
+  ],
+  [
+   "PMC11736568",
+   4
+  ],
+  [
+   "PMC11736568",
+   7
+  ],
+  [
+   "PMC11736568",
+   8
+  ],
+  [
+   "PMC10512355",
+   2
+  ],
+  [
+   "PMC10512355",
+   4
+  ],
+  [
+   "PMC10512355",
+   5
+  ],
+  [
+   "PMC10512355",
+   6
+  ],
+  [
+   "PMC10512355",
+   7
+  ],
+  [
+   "PMC10166486",
+   5
+  ],
+  [
+   "PMC10166486",
+   6
+  ],
+  [
+   "PMC10166486",
+   7
+  ],
+  [
+   "PMC10388791",
+   3
+  ],
+  [
+   "PMC10388791",
+   4
+  ],
+  [
+   "PMC10388791",
+   6
+  ],
+  [
+   "PMC10167070",
+   4
+  ],
+  [
+   "PMC10167070",
+   11
+  ],
+  [
+   "PMC11044684",
+   6
+  ],
+  [
+   "PMC11044684",
+   7
+  ],
+  [
+   "PMC11044684",
+   8
+  ],
+  [
+   "PMC11688469",
+   2
+  ],
+  [
+   "PMC11688469",
+   3
+  ],
+  [
+   "PMC11688469",
+   4
+  ],
+  [
+   "PMC10170726",
+   8
+  ],
+  [
+   "PMC10170726",
+   9
+  ],
+  [
+   "PMC10406163",
+   5
+  ],
+  [
+   "PMC10406163",
+   11
+  ],
+  [
+   "PMC10406163",
+   13
+  ]
+ ],
+ "sources": [
+  {
+   "pmcid": "PMC10156028",
+   "title": "Characteristics of Bronchiectasis Associated with Chronic Obstructive Pulmonary Disease.",
+   "authors": "Deghdegh K, Boukadoum N, Terra B, Amoura K, Benali R.",
+   "journal": "The open respiratory medicine journal",
+   "year": "2022",
+   "doi": "10.2174/18743064-v16-e2203311",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10164476",
+   "title": "Expression of heat shock protein genes in Simmental cattle exposed to heat stress.",
+   "authors": "Guzm\u00e1n LF, Mart\u00ednez-Vel\u00e1zquez G, Villase\u00f1or-Gonz\u00e1lez F, Vega-Murillo VE, Palacios-Fr\u00e1nquez JA, R\u00edos-Utrera \u00c1, Monta\u00f1o-Berm\u00fadez M.",
+   "journal": "Animal bioscience",
+   "year": "2023",
+   "doi": "10.5713/ab.22.0266",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10194073",
+   "title": "Colon surgical-site infections and the impact of \"present at the time of surgery (PATOS)\" in a large network of community hospitals.",
+   "authors": "Seidelman JL, Ge M, Baker AW, Lewis S, Advani SD, Smith B, Anderson DJ.",
+   "journal": "Infection control and hospital epidemiology",
+   "year": "2023",
+   "doi": "10.1017/ice.2022.236",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC11685680",
+   "title": "The association between the polymorphism of RAR related orphan receptor beta and the clinical manifestations of oral squamous cell carcinoma.",
+   "authors": "Yang WE, Lin CW, Chen YT, Su CW, Yeh CM, Lee CY, Yang SF, Chen MK.",
+   "journal": "Journal of Cancer",
+   "year": "2025",
+   "doi": "10.7150/jca.103945",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10828044",
+   "title": "CagA-positive <i>Helicobacter pylori</i> may promote and aggravate scrub typhus.",
+   "authors": "Du Q, Zeng H, Pang X, Cao J, Xie B, Long C, Liang L, Deng F, Huang M, Li L, Huang F, Liu X, Hu Y, Lv J.",
+   "journal": "Frontiers in microbiology",
+   "year": "2024",
+   "doi": "10.3389/fmicb.2024.1351784",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC11563044",
+   "title": "Local Application of Scientific Research Practices Builds Student Engagement in Science and Environmental Health.",
+   "authors": "Jones D, Kiley A, Coe M, Ward T, Hester C.",
+   "journal": "Journal of STEM outreach",
+   "year": "2023",
+   "doi": "10.15695/jstem/v6i1.02",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10634086",
+   "title": "Can we achieve better trial recruitment by presenting patient information through multimedia? Meta-analysis of 'studies within a trial' (SWATs).",
+   "authors": "Madurasinghe VW, Knapp P, Eldridge S, Collier D, Treweek S, Rick J, Graffy J, Parker A, Salisbury C, Torgerson D, Jolly K, Sidhu MS, Fife-Schaw C, Hull MA, Sprange K, Brettell E, Bhandari S, Montgomery A, Bower P.",
+   "journal": "BMC medicine",
+   "year": "2023",
+   "doi": "10.1186/s12916-023-03081-5",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC11736568",
+   "title": "Leveraging digital health systems maturity assessments to guide strategic priorities.",
+   "authors": "Vumbugwa P, Puttkammer N, Majaha M, Likaka A, Stampfly S, Biondich P, Shivers JE, Mburu K, Soge OO, Longenecker C, Flowers J, Feldacker C.",
+   "journal": "Journal of public health in Africa",
+   "year": "2024",
+   "doi": "10.4102/jphia.v15i1.769",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10512355",
+   "title": "Crossability of miniature rose and quantitative and qualitative traits in hybrids.",
+   "authors": "Meral ED.",
+   "journal": "Frontiers in plant science",
+   "year": "2023",
+   "doi": "10.3389/fpls.2023.1244426",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10166486",
+   "title": "Does adding MRI and CSF-based biomarkers improve cognitive status classification based on cognitive performance questionnaires?",
+   "authors": "Farina MP, Saenz J, Crimmins EM.",
+   "journal": "PloS one",
+   "year": "2023",
+   "doi": "10.1371/journal.pone.0285220",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10388791",
+   "title": "Low bone mineral density in Thai children with systemic lupus erythematosus: prevalence and risk factors.",
+   "authors": "Chanakul A, Khunrattanaphon S, Deekajorndech T.",
+   "journal": "Asian biomedicine : research, reviews and news",
+   "year": "2021",
+   "doi": "10.2478/abm-2021-0030",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10167070",
+   "title": "Molecular imaging of fibroblast activation in multiple non-ischemic cardiomyopathies.",
+   "authors": "Wang J, Huo L, Lin X, Fang L, Hacker M, Niu N, Li X.",
+   "journal": "EJNMMI research",
+   "year": "2023",
+   "doi": "10.1186/s13550-023-00986-3",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC11044684",
+   "title": "Immunocompromised individuals are at increased risk of COVID-19 breakthrough infection, hospitalization, and death in the post-vaccination era: A systematic review.",
+   "authors": "Bytyci J, Ying Y, Lee LYW.",
+   "journal": "Immunity, inflammation and disease",
+   "year": "2024",
+   "doi": "10.1002/iid3.1259",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC11688469",
+   "title": "Impact of rumen-protected glucose on performance, milk composition, and selected blood metabolites of early lactating Holstein Friesian cows.",
+   "authors": "Yu H, Rahman A, Rahman HU, Khan M, Mushtaq M, Quan G, Zafar MH, Li Z, Rahman MAU.",
+   "journal": "Frontiers in veterinary science",
+   "year": "2024",
+   "doi": "10.3389/fvets.2024.1498357",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10170726",
+   "title": "Postoperative intermittent pneumatic compression for preventing venous thromboembolism in Chinese lung cancer patients: a randomized clinical trial.",
+   "authors": "Li J, Huang A, Han Z, Zhou Y, Tang M, Tang M, Wu W, Zhang S, Liao K, Xie Y, Chen Q, Zou X, Liu S, Gao S, Ren J, Xu Q, Liu X, Liao Y, Jing T, Tan W, Qiu Y, Wang H.",
+   "journal": "Thrombosis journal",
+   "year": "2023",
+   "doi": "10.1186/s12959-023-00498-z",
+   "license": "cc by"
+  },
+  {
+   "pmcid": "PMC10406163",
+   "title": "An Introductory Tutorial on Cardiovascular Pharmacogenetics for Healthcare Providers.",
+   "authors": "Oni-Orisan A, Tuteja S, Hoffecker G, Smith DM, Castrichini M, Crews KR, Murphy WA, Nguyen NHK, Huang Y, Lteif C, Friede KA, Tantisira K, Aminkeng F, Voora D, Cavallari LH, Whirl-Carrillo M, Duarte JD, Luzum JA, Pharmacogenomics Global Research Network (PGRN) Publications Committee.",
+   "journal": "Clinical pharmacology and therapeutics",
+   "year": "2023",
+   "doi": "10.1002/cpt.2957",
+   "license": "cc by"
+  }
+ ],
+ "per_page": [
+  {
+   "page": 1,
+   "tables": [
+    {
+     "rows": 14,
+     "columns": 2,
+     "confidence": 0.9881,
+     "caption": "Table 1. Characteristics of the study population.",
+     "markdown_sha256": "1a9a627763963521738fa96f3f603066e2202136e697e3bd56d8fef3d23b14bd"
+    },
+    {
+     "rows": 12,
+     "columns": 2,
+     "confidence": 0.9221,
+     "caption": "",
+     "markdown_sha256": "6fc48d840dcbde485119b9c68d09691bc580fe762a0cc965504df2c28fc8a109"
+    }
+   ]
+  },
+  {
+   "page": 2,
+   "tables": [
+    {
+     "rows": 19,
+     "columns": 4,
+     "confidence": 0.9918,
+     "caption": "Table 3. Characteristics of bronchiectasis in both groups.",
+     "markdown_sha256": "4afddd9fdcbcfa7fcd6c0073f7be6919c23732cd947fde6cf279ef7a8b5b2f85"
+    },
+    {
+     "rows": 7,
+     "columns": 4,
+     "confidence": 0.9859,
+     "caption": "Table 4. Multivariate logistic regression analysis for statistically significant variables (p<0.05).",
+     "markdown_sha256": "b7fe01b3ba4165f61674c9764d15d407a35416da086fab0e35d76a8ccb4d1234"
+    }
+   ]
+  },
+  {
+   "page": 3,
+   "tables": [
+    {
+     "rows": 4,
+     "columns": 2,
+     "confidence": 0.9394,
+     "caption": "",
+     "markdown_sha256": "eeed85e919b42023a9544050841aaefc843967d8ae60b9a52369b45760f49b52"
+    }
+   ]
+  },
+  {
+   "page": 4,
+   "tables": [
+    {
+     "rows": 13,
+     "columns": 4,
+     "confidence": 0.9973,
+     "caption": "Table 1. Description of primers and probes used in the amplification of HSP60, HSP70, and HSP90 genes in Simmental cattl",
+     "markdown_sha256": "ac4c5bc2a5d7b013e8cae81438fbef38117142ee647bd7c904a3723873f2ffcb"
+    }
+   ]
+  },
+  {
+   "page": 5,
+   "tables": [
+    {
+     "rows": 16,
+     "columns": 5,
+     "confidence": 0.9959,
+     "caption": "Table 3. Least-squares means and standard errors for the expression of HSP genes for Simmental cattle in three farms of ",
+     "markdown_sha256": "c25f7a84dfbe217b574bf7e3b43e243309c6f71a2e61835c693d2e14254baba9"
+    },
+    {
+     "rows": 7,
+     "columns": 4,
+     "confidence": 0.9946,
+     "caption": "Table 2. p-values for the expression of HSP genes for Simmental cattle in three farms of the tropical region of western ",
+     "markdown_sha256": "5cf2e7de0f8136af476d01d407dc3bc57b8148822708d25ff13c2118e1d1260f"
+    }
+   ]
+  },
+  {
+   "page": 6,
+   "tables": [
+    {
+     "rows": 8,
+     "columns": 4,
+     "confidence": 0.9958,
+     "caption": "Table 4. Least-squares means and standard errors for farm and sex considering body temperature (BT\u00b0), heart rate (HR) an",
+     "markdown_sha256": "f863f161a00f4328ceb7662266ef26475ef1eb8cb6af0c82127ea5c777dc8f0a"
+    }
+   ]
+  },
+  {
+   "page": 7,
+   "tables": [
+    {
+     "rows": 16,
+     "columns": 5,
+     "confidence": 0.9976,
+     "caption": "Table1. UnivariateDescriptiveStatisticsofAllColonSurgeriesandAllComplexSurgicalSiteInfections(SSIs)",
+     "markdown_sha256": "b09b8e9d896441036f77f0fe31b432d96d944df2c5668504dc4f39f9a3d07b51"
+    }
+   ]
+  },
+  {
+   "page": 8,
+   "tables": [
+    {
+     "rows": 16,
+     "columns": 4,
+     "confidence": 0.9975,
+     "caption": "Table2. UnivariateDescriptiveStatisticsComparingComplexPATOSCOLOSSIsandComplexNon-PATOSCOLOSSIs",
+     "markdown_sha256": "0b9cc8df065cd2f92ad47a77f43eb6ba986df6e3d9a0a867693d795708769fab"
+    },
+    {
+     "rows": 11,
+     "columns": 7,
+     "confidence": 0.9969,
+     "caption": "a Table3. VariableAnalysisforComplexCOLOSSIsUsingMultivariableLogisticRegressionModels",
+     "markdown_sha256": "ab30c4f4ef2111d5100e019ae36b15e359a4de30d379bd19fa3e612ff1d5b103"
+    }
+   ]
+  },
+  {
+   "page": 9,
+   "tables": [
+    {
+     "rows": 16,
+     "columns": 4,
+     "confidence": 0.9981,
+     "caption": "Table4. ComparisonofPathogensThatCausedComplexNon-PATOSSSIsandComplexPATOSSSIs",
+     "markdown_sha256": "b2dda2160553b40c9c2a87fcde831e9316f837d8e6eb088b55d53c1ea3cdbd40"
+    }
+   ]
+  },
+  {
+   "page": 10,
+   "tables": [
+    {
+     "rows": 28,
+     "columns": 4,
+     "confidence": 0.991,
+     "caption": "The distributions of demographical characteristics in Table 1. 1174 controls and 1254 male patients with oral squamous c",
+     "markdown_sha256": "7ac69311a9b3b25bb13bda7b753e9cd5f01e779b83b5e71ab65b9684ad0754b1"
+    },
+    {
+     "rows": 15,
+     "columns": 5,
+     "confidence": 0.9864,
+     "caption": "Odds ratio and 95% confidence interval of oral Table 2. RORB squamous cell carcinoma associated with genotypic frequenci",
+     "markdown_sha256": "5d2a61a1d0223d5749f2c8783f8837d539cda8a75020b28502160a2e040adae3"
+    }
+   ]
+  },
+  {
+   "page": 11,
+   "tables": [
+    {
+     "rows": 16,
+     "columns": 5,
+     "confidence": 0.9959,
+     "caption": "RORB Odds ratio and 95% confidence intervals of clinical statuses associated with genotypic frequencies of rs10781247 in",
+     "markdown_sha256": "9c4fb41f3dddffb4e4dde5df4f68769cc268285ac99a2caa1d5e47fbbb16e9b2"
+    },
+    {
+     "rows": 17,
+     "columns": 9,
+     "confidence": 0.9925,
+     "caption": "RORB Clinical statuses and genotypic frequencies of rs10781247 in oral squamous cell carcinoma who are betel quid chewer",
+     "markdown_sha256": "87944ddf4e7311f7f5939500fb358dbc5f2cedcae28b89741eb03dc01335543f"
+    }
+   ]
+  },
+  {
+   "page": 12,
+   "tables": [
+    {
+     "rows": 17,
+     "columns": 9,
+     "confidence": 0.9976,
+     "caption": "RORB Clinical statuses and genotypic frequencies of rs3750420 in buccal mucosa cancer and tongue cancer Table 5.",
+     "markdown_sha256": "b9017ee792af4452ca692433fdb5acf0e56093e66be37381bc5fdca0017a8e57"
+    }
+   ]
+  },
+  {
+   "page": 13,
+   "tables": [
+    {
+     "rows": 13,
+     "columns": 5,
+     "confidence": 0.997,
+     "caption": "TABLE 1 Comparison of general characteristics between H. pylori positive and H. pylori negative patients with Scrub typh",
+     "markdown_sha256": "1d97c3a970fffa607b14fe9838d5861cd8abe7d7350738a295bf2cf64b10deab"
+    },
+    {
+     "rows": 4,
+     "columns": 3,
+     "confidence": 0.9842,
+     "caption": "TABLE 2 H. pylori infection status in patients with tsutsugamushi disease.",
+     "markdown_sha256": "bd79bb9517c95dcdd29eb80b84903041dfcaa33dab53fae319a66efb08f77030"
+    }
+   ]
+  },
+  {
+   "page": 14,
+   "tables": [
+    {
+     "rows": 5,
+     "columns": 6,
+     "confidence": 0.994,
+     "caption": "TABLE 3 Multivariate regression analysis of the relationship between H. pylori infection and tsutsugamushi disease.",
+     "markdown_sha256": "9ed1bafe56f0a999996140b3b2fded176e5923c69f10a6a2a2b9f3fdda859eee"
+    }
+   ]
+  },
+  {
+   "page": 15,
+   "tables": [
+    {
+     "rows": 5,
+     "columns": 2,
+     "confidence": 0.9906,
+     "caption": "Table 1 . Student survey free-response questions and years used in survey.",
+     "markdown_sha256": "cc0b7be92898956af30b75110de9d209dfbf154e8bead32934fb1ff197bf285b"
+    }
+   ]
+  },
+  {
+   "page": 16,
+   "tables": [
+    {
+     "rows": 9,
+     "columns": 4,
+     "confidence": 0.9973,
+     "caption": "Table 2. b Themes in student comments about what they learned from preparing and presenting summaries of their air quali",
+     "markdown_sha256": "2e423a8ed12d75020e234e79fab3883037335a8c761822d4be427788fa6c63ff"
+    }
+   ]
+  },
+  {
+   "page": 17,
+   "tables": [
+    {
+     "rows": 19,
+     "columns": 4,
+     "confidence": 0.9953,
+     "caption": "Table 3. c Themes in student comments about how the program affected their interest in science and science careers.",
+     "markdown_sha256": "9b8d346964766abaffe7b41357a1004806aeb8f09d81d3e0a70f615f46cb90c4"
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "tables": [
+    {
+     "rows": 6,
+     "columns": 5,
+     "confidence": 0.9966,
+     "caption": "Table 1 Trial characteristics",
+     "markdown_sha256": "60d63f0a09cfea9b70f812eb633fc666ed5ae0d2cf48551ee8d2d96196ac9c9d"
+    }
+   ]
+  },
+  {
+   "page": 19,
+   "tables": [
+    {
+     "rows": 7,
+     "columns": 5,
+     "confidence": 0.9949,
+     "caption": "Table 2 Primary outcome\u2014randomised to host trial",
+     "markdown_sha256": "712ab91681cce1d406079821ceec615778590ea45755a6684d03e2247f8403e4"
+    }
+   ]
+  },
+  {
+   "page": 20,
+   "tables": [
+    {
+     "rows": 6,
+     "columns": 5,
+     "confidence": 0.9939,
+     "caption": "Table 3 Secondary outcome\u2014responded positively to invitation",
+     "markdown_sha256": "cd41e24cad4c4d26ff2d5ee1bf1f42fad69f9e57c5ed178d0f424e7d7720ccf6"
+    }
+   ]
+  },
+  {
+   "page": 21,
+   "tables": [
+    {
+     "rows": 5,
+     "columns": 5,
+     "confidence": 0.9919,
+     "caption": "Table 4 Secondary outcome\u2014retained at primary endpoint of the host trial",
+     "markdown_sha256": "cea7befa1f99467e52540d452c0a0f13a670def536cf386f7fc60d2fe6d03ce3"
+    }
+   ]
+  },
+  {
+   "page": 22,
+   "tables": [
+    {
+     "rows": 2,
+     "columns": 2,
+     "confidence": 0.6966,
+     "caption": "",
+     "markdown_sha256": "bf2e97fe06557e1de6d87b40bfd4302f2b8837b29d229fea07746fc4d6d1aa57"
+    }
+   ]
+  },
+  {
+   "page": 23,
+   "tables": [
+    {
+     "rows": 0,
+     "columns": 0,
+     "confidence": 0.9252,
+     "caption": "Publisher\u2019s Note Springer Nature remains neutral with regard to jurisdictional claims in pub\u2011 lished maps and institutio",
+     "markdown_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+     "rows": 0,
+     "columns": 0,
+     "confidence": 0.5014,
+     "caption": "Publisher\u2019s Note Springer Nature remains neutral with regard to jurisdictional claims in pub\u2011 lished maps and institutio",
+     "markdown_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+   ]
+  },
+  {
+   "page": 24,
+   "tables": [
+    {
+     "rows": 6,
+     "columns": 3,
+     "confidence": 0.9919,
+     "caption": "TABLE 2: Summary of digital health maturity assessments contribution to health information systems strengthening.",
+     "markdown_sha256": "1803d7897a5a533b20f285621a4012a8e381151ce02ccc75fd334777c7fa17a7"
+    },
+    {
+     "rows": 7,
+     "columns": 4,
+     "confidence": 0.9913,
+     "caption": "",
+     "markdown_sha256": "dab854bb1dacca0a8126888a21742b54fedb822b3fbed26024e315ae0cb2efa4"
+    }
+   ]
+  },
+  {
+   "page": 25,
+   "tables": [
+    {
+     "rows": 7,
+     "columns": 4,
+     "confidence": 0.9961,
+     "caption": "TABLE 3: Summary of barriers and facilitators to planning digital health maturity assessments.",
+     "markdown_sha256": "ac8bb996c5a460d45558e4299188e93db0870bf4007eb314d437f017c9b7b458"
+    }
+   ]
+  },
+  {
+   "page": 26,
+   "tables": [
+    {
+     "rows": 7,
+     "columns": 3,
+     "confidence": 0.9928,
+     "caption": "TABLE 4: Summary of recommendations of ways health leaders can better plan for digital health systems maturity assessmen",
+     "markdown_sha256": "3bae91847bad4950a5abf832e1e32b84fa11a6d66ba931f496d5be585cc8df13"
+    }
+   ]
+  },
+  {
+   "page": 27,
+   "tables": [
+    {
+     "rows": 9,
+     "columns": 3,
+     "confidence": 0.9958,
+     "caption": "TABLE1 NuclearDNAcontentsandploidylevelsoftherosesinthe study(Doganetal.,2020;Dogan,2022;Doganetal.,2023).",
+     "markdown_sha256": "63eda0a9c9c44787c7c6e27fbd19852d780e86356907306bc4d4a3bd151a362d"
+    }
+   ]
+  },
+  {
+   "page": 28,
+   "tables": [
+    {
+     "rows": 13,
+     "columns": 7,
+     "confidence": 0.998,
+     "caption": "ComparisonofdifferentparametersincrossesofRosaspecies. TABLE2",
+     "markdown_sha256": "cdbcb447440f555f64f2155dae08d139326fc09a7675b1a1a5cd348433d93f94"
+    }
+   ]
+  },
+  {
+   "page": 29,
+   "tables": [
+    {
+     "rows": 7,
+     "columns": 7,
+     "confidence": 0.994,
+     "caption": "Rosa TABLE3 Correlationbetweensomedifferentparametersforcross-breedingin species.",
+     "markdown_sha256": "ef37531fa96eed71135dce23cea9d86620b073a24b025c4dbc0c7f5173e2df86"
+    },
+    {
+     "rows": 9,
+     "columns": 10,
+     "confidence": 0.9937,
+     "caption": "Morphologicaltraitsandflowercharacteristicsofparents. TABLE4",
+     "markdown_sha256": "c42e91b9121fa88a783285764e63585df8a7d8438577cade7e7ea3d047b969e9"
+    }
+   ]
+  },
+  {
+   "page": 30,
+   "tables": [
+    {
+     "rows": 13,
+     "columns": 9,
+     "confidence": 0.9969,
+     "caption": "fl TABLE5 Morphologicaltraitsand owercharacteristicsofF1progenies.",
+     "markdown_sha256": "62d3cd4b355cfb1ff85216f57111b3c223c3f689c3723147784e04cd8abab8b3"
+    },
+    {
+     "rows": 14,
+     "columns": 6,
+     "confidence": 0.9969,
+     "caption": "TABLE6 ExploitationintheF progeniesofthepetalcolor. 1",
+     "markdown_sha256": "f34b52a43ee68f974537afe477308ef59f39e805fb9f4de8ff720990bfde338c"
+    }
+   ]
+  },
+  {
+   "page": 31,
+   "tables": [
+    {
+     "rows": 25,
+     "columns": 8,
+     "confidence": 0.9983,
+     "caption": "TABLE7 HeterosisandheterobeltiosisofF hybridsforsomeparameters. 1",
+     "markdown_sha256": "b451e52c6af37ebc7a27c1a48e11685286b257c7346a29f3a6b41d44a5cc6647"
+    }
+   ]
+  },
+  {
+   "page": 32,
+   "tables": [
+    {
+     "rows": 13,
+     "columns": 4,
+     "confidence": 0.9966,
+     "caption": "Table1. Samplecharacteristics(ADNI,N=832).",
+     "markdown_sha256": "607900c8b88e8d8511cd0682f4bc1033add20e09c43d1315714eda89be4d0df8"
+    }
+   ]
+  },
+  {
+   "page": 33,
+   "tables": [
+    {
+     "rows": 31,
+     "columns": 6,
+     "confidence": 0.9981,
+     "caption": "Table2. CoefficientsformultinomiallogisticregressionmodelpredictingcognitivestatusfromMMSE,MRI,andCSFmarkers(ADNI,N=832)",
+     "markdown_sha256": "1e6711669483be8c8e21588123a8cbea33c1d1f8431e4ca8828c5e6bcb8c8f3f"
+    }
+   ]
+  },
+  {
+   "page": 34,
+   "tables": [
+    {
+     "rows": 4,
+     "columns": 6,
+     "confidence": 0.997,
+     "caption": "Table3. DifferencesofobservedandpredictedprevalenceofcognitivestatusinADNIstudy(N=832).",
+     "markdown_sha256": "ac71154f25eedd9c1fe97ac02d67da5ca171cec095391fbcbdcef733609ab565"
+    }
+   ]
+  },
+  {
+   "page": 35,
+   "tables": [
+    {
+     "rows": 14,
+     "columns": 7,
+     "confidence": 0.9979,
+     "caption": "Table 1. Characteristics based on the BMD z score in pediatric patients with SLE",
+     "markdown_sha256": "235f8a61ffc36240e99e896e8509c755f66cad1bf11ad206d3c1f7cecf290f08"
+    }
+   ]
+  },
+  {
+   "page": 36,
+   "tables": [
+    {
+     "rows": 5,
+     "columns": 9,
+     "confidence": 0.9906,
+     "caption": "Table 2. Factors associated with low BMD in patients with childhood SLE",
+     "markdown_sha256": "196c8735c2da74f969ed78c650b74679127eb0b8f6ea87d1a75a8fa5f5f8f60a"
+    }
+   ]
+  },
+  {
+   "page": 37,
+   "tables": [
+    {
+     "rows": 0,
+     "columns": 0,
+     "confidence": 0.794,
+     "caption": "",
+     "markdown_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+   ]
+  },
+  {
+   "page": 38,
+   "tables": [
+    {
+     "rows": 18,
+     "columns": 2,
+     "confidence": 0.9884,
+     "caption": "Table 1 Characteristics of NICM patients. Values are mean \u00b1 SD for continuous variables. cTnI, cardiac troponin I; CK, c",
+     "markdown_sha256": "320c9f8f07bc8e0dda9c43c02f57e5f1b206c3e12350062865e7e32e3080510d"
+    }
+   ]
+  },
+  {
+   "page": 39,
+   "tables": [
+    {
+     "rows": 8,
+     "columns": 5,
+     "confidence": 0.9147,
+     "caption": "",
+     "markdown_sha256": "d13015ddadb85263b7b3b73279bb254cf5988f0568e09c81b3c6e9c1e695c98c"
+    }
+   ]
+  },
+  {
+   "page": 40,
+   "tables": [
+    {
+     "rows": 8,
+     "columns": 8,
+     "confidence": 0.9926,
+     "caption": "",
+     "markdown_sha256": "bfefc88858f98d126152b4ede47dee99344d448c740c272a91acc40f39f5894d"
+    }
+   ]
+  },
+  {
+   "page": 41,
+   "tables": [
+    {
+     "rows": 7,
+     "columns": 7,
+     "confidence": 0.9966,
+     "caption": "Calculatedrelativeriskofbreakthroughinfectionsinnon\u2010cancerimmunocompromisedcohortcomparedwithnon\u2010 TABLE 3 immunocompromi",
+     "markdown_sha256": "cc0bea7e03d46a348a05f5cd76e835a7ea2dc4beb42a9e32407ba46f5a6f284c"
+    },
+    {
+     "rows": 5,
+     "columns": 5,
+     "confidence": 0.9843,
+     "caption": "Relativeriskofhospitalizationanddeathincancerpatients. TABLE 4",
+     "markdown_sha256": "157ecb9d20eb2f2195520e7364c5d1aa0d23bebaa6df9fc203350ea5fe7b1403"
+    },
+    {
+     "rows": 8,
+     "columns": 4,
+     "confidence": 0.9624,
+     "caption": "Calculatedrelativeriskofbreakthroughinfectionsinthecancercohortcomparedthenon\u2010cancercohort. TABLE 2",
+     "markdown_sha256": "91694fa74b66015333c562a3d9025a31bd6876d3c39f64c92b8c02fd82db955d"
+    }
+   ]
+  },
+  {
+   "page": 42,
+   "tables": [
+    {
+     "rows": 14,
+     "columns": 3,
+     "confidence": 0.9963,
+     "caption": "Adjustedrateratiosofhospitalizationsanddeathin TABLE 5 immunocompromisedpatientstakenfromAgrawaletal.",
+     "markdown_sha256": "69be4b9fc6e52b77aa1e95c97a3ef60adb70a1a5918aaa8bd6fd518ea9a21d45"
+    }
+   ]
+  },
+  {
+   "page": 43,
+   "tables": [
+    {
+     "rows": 20,
+     "columns": 2,
+     "confidence": 0.9971,
+     "caption": "TABLE 1 Basal diet feed formulation on a dry basis.",
+     "markdown_sha256": "2a5be674b428b986111a03d41225247aa850b0750114462697ac2eb35da2db4e"
+    }
+   ]
+  },
+  {
+   "page": 44,
+   "tables": [
+    {
+     "rows": 15,
+     "columns": 2,
+     "confidence": 0.9937,
+     "caption": "TABLE 2 Basal diet compositional characteristics on a dry basis.",
+     "markdown_sha256": "64036d5e386840a1741149ff7762b614e8a327863a6fc0c87aafd0a451775044"
+    }
+   ]
+  },
+  {
+   "page": 45,
+   "tables": [
+    {
+     "rows": 8,
+     "columns": 9,
+     "confidence": 0.9963,
+     "caption": "TABLE 3 Production performance of early lactating cows supplemented with different levels of rumen-protected glucose.",
+     "markdown_sha256": "2add9c0041c59b043500b299a74df930a554eec74816117937464a8e07b3f0e8"
+    },
+    {
+     "rows": 7,
+     "columns": 9,
+     "confidence": 0.9789,
+     "caption": "TABLE 4 Milk Composition of early lactating cows supplemented with different levels of rumen-protected glucose.",
+     "markdown_sha256": "2339c2d11e6de20a87c7e5a53b1aba3fde3cea01f734d0b6393f5468e87eb605"
+    }
+   ]
+  },
+  {
+   "page": 46,
+   "tables": [
+    {
+     "rows": 16,
+     "columns": 4,
+     "confidence": 0.9968,
+     "caption": "Table 1 The baseline information",
+     "markdown_sha256": "841a8142eba5aaedf2d288762fc9f980298aa62c6446dbf0a25757aa5225d637"
+    }
+   ]
+  },
+  {
+   "page": 47,
+   "tables": [
+    {
+     "rows": 2,
+     "columns": 6,
+     "confidence": 0.9594,
+     "caption": "Table 2 Intervention RR was compared with the adjust RR",
+     "markdown_sha256": "0b3007dca881bde95620251044c0e7da7bd5cc0766f1598ca80b1cd785a5e41d"
+    }
+   ]
+  },
+  {
+   "page": 48,
+   "tables": [
+    {
+     "rows": 0,
+     "columns": 0,
+     "confidence": 0.559,
+     "caption": "",
+     "markdown_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+   ]
+  },
+  {
+   "page": 49,
+   "tables": [
+    {
+     "rows": 0,
+     "columns": 0,
+     "confidence": 0.542,
+     "caption": "",
+     "markdown_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+   ]
+  },
+  {
+   "page": 50,
+   "tables": [
+    {
+     "rows": 0,
+     "columns": 0,
+     "confidence": 0.5511,
+     "caption": "",
+     "markdown_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+   ]
+  }
+ ]
+}

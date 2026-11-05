@@ -1,0 +1,13 @@
+.git
+**/.git
+**/__pycache__
+**/.venv
+**/venv
+**/*.pyc
+*.tgz
+scripts
+ae3-tl-build/tests
+ae3-tl-build/.github
+ae3-tl-build/docs
+ae3-tl-build/.env
+ae3-tl-build/uv.lock

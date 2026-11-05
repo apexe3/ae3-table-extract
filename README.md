@@ -26,18 +26,29 @@ how cells are assembled from model geometry plus OCR text.
 ```
 ae3-table-extract/
 ├── README.md              ← you are here
+├── AE3-TL_2026.pdf        ← the research paper
 ├── LICENSE                ← Apache 2.0 (open source, commercial use allowed)
 ├── NOTICE                 ← attribution notice (keep with redistributions)
 ├── requirements.txt       ← Python dependencies
 ├── pyproject.toml         ← installable as a package (pip install -e .)
+├── Dockerfile             ← lightweight CPU image of the library in src/
+├── Dockerfile.gpu         ← lightweight GPU image of the library in src/
 ├── .gitignore
 ├── examples/
 │   ├── run_local.py       ← weights download + image → tables (JSON/MD/HTML/CSV)
 │   ├── extract_to_md.py   ← tables JSON + source image → a Markdown report
 │   ├── sample.png         ← a real page to try it on
 │   └── sample_words.json  ← its OCR words, for the --words flow
-└── src/
-    └── ae3_tl/            ← the table-extraction library
+├── src/
+│   └── ae3_tl/            ← the table-extraction library
+└── ae3-gpu-setup/         ← the production GPU service and its Docker images
+    ├── README.md          ← GPU deployment guide (start here to deploy)
+    ├── Dockerfile         ← apexe3/ae3-table-extract:gpu
+    ├── Dockerfile.cpu     ← apexe3/ae3-table-extract:cpu
+    ├── build_and_push.sh  ← builds and publishes both images
+    ├── scripts/make_words.py ← PDFs or scans → page images + words files
+    ├── scripts/bench.py   ← throughput and latency of a running service
+    └── ae3-tl-build/      ← the service source (API, runtime, tests)
 ```
 
 ## How it works
@@ -205,44 +216,50 @@ with open("tables.json", "w") as fh:
 
 ## Docker
 
-Ready-made images are published on Docker Hub — weights (~126 MB) are
-downloaded into the mounted volume on first start and reused afterwards.
+The production service is published on Docker Hub as **`apexe3/ae3-table-extract`**:
+
+| tag | for |
+|---|---|
+| `:gpu`, `:0.23-gpu` | NVIDIA GPUs (x86_64, CUDA 12, driver 550+). ~190 ms a page, 37.7 pages/s on half an A100 |
+| `:cpu`, `:0.23-cpu` | any machine (x86_64 and ARM). Includes Tesseract, so it also reads scanned pages |
+
+Full instructions (sizing, sharing a GPU with vLLM, security, building, troubleshooting) are in
+the **[GPU deployment guide](ae3-gpu-setup/README.md)**. The short version, on a GPU server with
+the NVIDIA Container Toolkit:
 
 ```bash
-# CPU
-docker run -d --name ae3-tl -p 8000:8000 \
-  -e AE3_API_KEY=change-me \
-  -v ae3-weights:/data/weights \
-  usmanapexe3/ae3-table-extract:latest
+openssl rand -hex 24 > ~/ae3-tl.key && chmod 600 ~/ae3-tl.key
 
-# GPU (NVIDIA, CUDA 12.8 + cuDNN 9 — needs the NVIDIA Container Toolkit
-# on the host and a driver of 570.x or newer)
-docker run -d --name ae3-tl-gpu --gpus all -p 8000:8000 \
-  -e AE3_API_KEY=change-me \
-  -v ae3-weights:/data/weights \
-  usmanapexe3/ae3-table-extract:gpu
+docker run -d --name ae3-tl --restart unless-stopped \
+  --gpus all -p 8000:8000 --shm-size 1g \
+  -e AE3_API_KEY=$(cat ~/ae3-tl.key) \
+  -e AE3_COPIES=3 \
+  -v ae3tl-weights:/data/weights \
+  apexe3/ae3-table-extract:gpu
+
+docker logs -f ae3-tl        # wait for "GPU check passed" and one startup line per copy
 ```
 
-Then:
+Then send a page **with its words** (the GPU image has no OCR). To make words files for your own
+PDFs or scans, use `ae3-gpu-setup/scripts/make_words.py` (see the guide):
 
 ```bash
-curl http://localhost:8000/health
-curl http://localhost:8000/v1/extract -H "X-API-Key: change-me" \
-  -F "file=@page.png" -F "fmt=json"
+curl localhost:8000/ready
+curl -s localhost:8000/v1/extract -H "X-API-Key: $(cat ~/ae3-tl.key)" \
+  -F "file=@examples/sample.png" -F "words=@examples/sample_words.json" \
+  -F "ocr=never" -F "rotation=0" -F "format=markdown"
 ```
 
 Notes:
 
-- The HTTP API (endpoints, auth, `AE3_API_KEY`) is served by `ae3-tl serve`
-  inside the container; the API key is required on every route except
-  `/health`.
-- Pick the GPU or CPU image with the tag: `:latest` / `:0.2.0` for CPU,
-  `:gpu` / `:0.2.0-gpu` for CUDA. Build them yourself with
-  `docker build -t ae3-tl .` (CPU) or `docker build -f Dockerfile.gpu -t ae3-tl-gpu .`.
-- Override the provider with `-e AE3_PROVIDER=cpu|cuda` if you want a GPU
-  container to fall back to CPU (or vice versa).
-- The images are built for `linux/amd64`; on an Apple-silicon Mac pass
-  `--platform linux/amd64` (emulated, fine for a smoke test, too slow for real use).
+- `AE3_COPIES` is the number of model copies on the GPU, about 3 GB each.
+- For scanned pages without words, run `apexe3/ae3-table-extract:cpu` instead (no `--gpus`).
+  It runs Tesseract on the CPU: seconds per page rather than milliseconds.
+- The `Dockerfile` and `Dockerfile.gpu` at the repo root build a lighter image of the
+  library in `src/` (`ae3-tl serve`), handy for development:
+  `docker build -t ae3-tl .` or `docker build -f Dockerfile.gpu -t ae3-tl-gpu .`.
+- Build the GPU image on an x86_64 Linux server; on an Apple-silicon Mac it runs under
+  emulation and is very slow.
 
 ## Output shape
 

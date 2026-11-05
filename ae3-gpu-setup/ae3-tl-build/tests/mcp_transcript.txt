@@ -1,0 +1,23 @@
+upload: file_id 82ab6fb29764
+initialize: server ae3-image 0.2.0, protocol 2025-06-18
+tools/list: ['extract_tables', 'job_status']
+tools/call: is_error=False
+tool result: tables_total=2 source=ocr elapsed_ms=2406.8
+first table: 14x2 score=0.9881 model_box=[325.4, 1075.7, 1137.2, 1557.0]
+body:
+| Setting | Features |
+| --- | --- |
+| Population | 112 |
+| Age | 69.49 Ans + 8.15 ans |
+| Sex | 108M-4F |
+| Smoking | 53, 214 48 P/Y |
+| BMI | 20.49 + 87 m’/kg |
+|  | Moderate 22.5% |
+|  | Severe 43.6% |
+|  | Very Severe 33.9% |
+| FEV, | 42,55 + 18,90% |
+| BODE | 5,54£2,63 |
+| 6MWT | 273,79+112,79 m |
+| I. Charlson | 3,99 £2,32 |
+| mMRC | 2.78 £0.79 |
+ok

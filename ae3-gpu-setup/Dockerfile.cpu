@@ -1,0 +1,68 @@
+# AE3-TL — Open-Source Table Extraction Toolkit
+# Copyright 2026 Team APEX:E3
+# Licensed under the Apache License, Version 2.0; see LICENSE in the repository root.
+#
+# AE3-TL CPU service: the same code and pinned packages as the GPU image, with the CPU build of
+# onnxruntime 1.23.2 instead of onnxruntime-gpu and no CUDA libraries.
+# Runs on x86_64 servers and Apple-silicon / ARM machines.
+#
+# Includes Tesseract, so it can also read scanned pages sent without words.
+#
+# Build:  docker build -f Dockerfile.cpu -t apexe3/ae3-table-extract:cpu .
+# Run:    see README.md in this folder
+
+FROM python:3.11-slim-bookworm
+
+LABEL org.opencontainers.image.title="AE3-TL (cpu)" \
+      org.opencontainers.image.description="Table extraction from page images: AE3-TL on ONNX Runtime (CPU) + Tesseract" \
+      org.opencontainers.image.licenses="Apache-2.0" \
+      org.opencontainers.image.source="https://github.com/apexe3/ae3-table-extract" \
+      org.opencontainers.image.vendor="Team APEX:E3" \
+      org.opencontainers.image.variant="cpu"
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends libgomp1 \
+        tesseract-ocr tesseract-ocr-eng tesseract-ocr-osd \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN python -m venv /opt/venv
+ENV PATH=/opt/venv/bin:$PATH
+
+# The benchmarked package set, swapping the GPU runtime and NVIDIA libraries for CPU onnxruntime
+COPY requirements.txt /tmp/requirements.txt
+RUN grep -v -E '^-e |^onnxruntime-gpu|^nvidia-' /tmp/requirements.txt > /tmp/req.txt \
+ && echo "onnxruntime==1.23.2" >> /tmp/req.txt \
+ && pip install -r /tmp/req.txt \
+ && rm /tmp/requirements.txt /tmp/req.txt
+
+COPY ae3-tl-build /tmp/ae3-tl-build
+RUN pip install --no-deps /tmp/ae3-tl-build && rm -rf /tmp/ae3-tl-build
+
+RUN python -c "import onnxruntime as o; print('onnxruntime', o.__version__, o.get_available_providers())"
+
+ENV AE3_PROVIDER=cpu \
+    AE3_BATCH_SIZE=1 \
+    AE3_CELL_BUILDER=fast \
+    AE3_WEIGHTS_DIR=/data/weights \
+    AE3_COPIES=1 \
+    AE3_PDF_WORKERS=1 \
+    OCR_ENGINE=tesseract
+
+COPY docker/entrypoint.sh /usr/local/bin/ae3-entrypoint
+RUN chmod 755 /usr/local/bin/ae3-entrypoint \
+ && useradd --system --uid 10001 --create-home --home-dir /home/ae3 ae3 \
+ && mkdir -p /data/weights \
+ && chown ae3:ae3 /data/weights
+USER ae3
+VOLUME /data/weights
+
+EXPOSE 8000
+HEALTHCHECK --interval=30s --timeout=5s --start-period=120s --retries=3 \
+  CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4)"
+
+ENTRYPOINT ["/usr/local/bin/ae3-entrypoint"]
